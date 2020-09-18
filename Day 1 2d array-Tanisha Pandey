@@ -28,7 +28,7 @@ int main()
 			{
 				for (j = 0; j < n; j++)
 				{
-					cout << arr[j][count] << " ";
+					cout << arr[j][count] << ",";
 				}
 			}
 
@@ -39,7 +39,7 @@ int main()
 				for (j = n-1; j >= 0; j--)
 				{
 
-					cout << arr[j][count] << " ";
+					cout << arr[j][count] << ",";
 				}
 			}
 			
