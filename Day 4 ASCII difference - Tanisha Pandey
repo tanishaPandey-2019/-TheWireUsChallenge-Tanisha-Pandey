@@ -1,0 +1,27 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int diff;
+	string letters;
+	cin >> letters;
+
+	int len = letters.length(), i;
+
+	for ( i = 0; i < len - 1; i++)
+	{
+		
+		
+			diff = letters[i + 1] - letters[i];
+
+			cout << letters[i] << diff;
+		
+
+	}
+
+	cout << letters[i];
+  
+  return 0;
+}
