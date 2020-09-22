@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string s;
+	cin >> s;
+
+	int len = s.length();
+
+	for (int i = 0; i < len; i++)
+	{
+		char m = s[i];
+		for (int j = i+1; j < len; j++)
+		{
+			if (m == s[j])
+			{
+				s[j] = '*';
+			}
+		}
+		cout << s[i];
+	}
+	return 0;
+
+}
