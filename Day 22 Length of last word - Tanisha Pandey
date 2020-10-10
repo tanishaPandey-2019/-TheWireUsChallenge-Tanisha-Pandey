@@ -1,0 +1,28 @@
+#include<iostream> 
+#include <boost/algorithm/string.hpp> 
+using namespace std; 
+
+int lengthOfLastWord(string a) 
+{ 
+	int len = 0; 
+	
+	string str(a); 
+	boost::trim_right(str); 
+	for (int i = 0; i < str.length(); i++) 
+	{ 
+		if (str.at(i) == ' ') 
+			len = 0; 
+		else
+			len++; 
+	} 
+	return len; 
+} 
+
+
+int main() 
+{ 
+	string str ;
+	cout <<lengthOfLastWord(str); 
+} 
+
+
